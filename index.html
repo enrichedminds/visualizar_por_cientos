@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica de Porcentajes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Práctica de Porcentajes</h1>
+  <div id="controls">
+    <label for="shape">Selecciona una figura:</label>
+    <select id="shape">
+      <option value="rectangle">Rectángulo</option>
+      <option value="square">Cuadrado</option>
+      <option value="circle">Círculo</option>
+    </select>
+    <br>
+    <label id="percentage-label" for="percentage">
+      ¿Cuánto por ciento del área del rectángulo desea sombrear?
+    </label>
+    <div class="input-group">
+      <input type="number" id="percentage" min="0" max="100" placeholder="10">
+      <button id="apply">Aplicar</button>
+    </div>
+  </div>
+  <canvas id="canvas" width="500" height="300"></canvas>
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
